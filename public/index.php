@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 <div class="overlay" id="overlay"></div>
@@ -51,36 +52,54 @@
         </div>
     </div>
     <div class="header-bottom">
-        <div class="container clearfix">
-            <button class="hamburger hamburger--squeeze" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <nav id="navigation">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">Прайс-лист</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+        <div class="container">
+            <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav nav-fill w-100 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Главная </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Прайс-лист</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </div>
 </header>
 <main>
     <div class="slider">
-        <div class="container-fluid">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img src="images/slide1.png" alt="slide1">
-                    </li>
-                    <li>
-                        <img src="images/slide2.png" alt="slide2">
-                    </li>
-                </ul>
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/slide1.png" alt="slide1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slide2.png" alt="slide2">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </div>
@@ -89,8 +108,8 @@
         <div class="container">
             <div class="products-path">
                 <ul>
-                    <li><a href="#">Главная /</a></li>
-                    <li><a href="#">Каталог /</a></li>
+                    <li><a href="#" class="active">Главная</a></li>
+                    <li><a href="#" class="active">Каталог</a></li>
                     <li><a href="#">Бытовая техника</a></li>
                 </ul>
             </div>
@@ -98,10 +117,12 @@
                 <div class="left-sidebar col-12 col-lg-3">
                     <ul class="item-menu">
                         <li><a href="#">Автомобили</a></li>
-                        <li><a href="#">Бытовая техника</a>
+                        <li><a href="#" class="active">Бытовая техника</a>
                             <ul>
-                                <li><a href="#">Микроволновки</a></li>
+                                <li><a href="#" class="active">Микроволновки</a></li>
                                 <li><a href="#">Холодильники</a></li>
+                                <li><a href="#">Посудомоечные машины</a></li>
+                                <li><a href="#">Чайники</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Мобильная техника</a></li>
@@ -256,8 +277,9 @@
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
-
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

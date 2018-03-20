@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        prevText: "",
-        nextText: ""
-    });
-
 //Contact form js
     $('#form-show').on('click', function (event) {
         event.preventDefault();
@@ -26,12 +19,6 @@ $(document).ready(function() {
                 $(this).attr('placeholder','Поле обязательно для заполнения');
             }
         })
-    });
-
-//Hamburger menu
-    $('.hamburger').on('click', function () {
-        $(this).toggleClass('is-active');
-        $('#navigation').slideToggle('slow');
     });
 
 //Ajax page change

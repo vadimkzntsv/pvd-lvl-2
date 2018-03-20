@@ -1,7 +1,6 @@
 @import "normalize/import-now";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 
 @import 'utils/variables';
 
@@ -13,7 +12,6 @@
 @import 'layout/header';
 @import 'layout/footer';
 
-@import 'libs/flexslider';
 
 @import 'pages/home';
 

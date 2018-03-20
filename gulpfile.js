@@ -28,7 +28,7 @@ gulp.task('styles', function () {
         .pipe(sourcemaps.init())
         .pipe(scss({outputStyle: 'compressed', includePaths: SASS_INCLUDE_PATHS}))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./public/css'));
 });
 gulp.task('js', function() {
     return gulp.src('./source-js/**/*.js')
@@ -38,7 +38,7 @@ gulp.task('js', function() {
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./js'));
+        .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('watch', ['styles', 'js'], function () {
